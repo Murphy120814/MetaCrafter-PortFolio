@@ -1,0 +1,98 @@
+.navbar__container{
+    border: 2px solid yellow;
+    width: 100%;
+    max-height: 200px;
+    margin: 0 auto;
+
+}
+
+img{
+    width: 100%;
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.navbar__flex-container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navbar__links-menu{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+.navbar__flex-container :first-child{
+    margin-right: auto;
+}
+
+.navbar__links-menu p{
+    padding: 3rem ;
+    font-size: 2rem;
+    display: block;
+} 
+
+.navbarToggleMenu{
+    display: none;
+    position: relative;
+    margin-right: 2rem;
+}
+
+
+.navbarToggleMenu svg{
+    cursor: pointer;
+}
+
+
+.navbarToggleMenu__container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background:var(--design-element-color);
+    padding: 2rem;
+    position:absolute;
+    top: 40px;
+    right: 0;
+    margin-top: 1rem;
+    min-width: 21rem;
+    border-radius: 3rem;
+    box-shadow: 0px 4px 8px #FF0000 ;
+
+}
+.navbarToggleMenu__container-links{
+    margin: auto;
+}
+
+.navbarToggleMenu__container-links p a{
+    color: black;
+    font-size: 2.5rem;
+}
+
+.navbarToggleMenu__container-links p{
+    padding: 1rem;
+}
+.navbarToggleMenu__container-links p button.call_to_action_btn{
+    background-color: black;
+    color: var(--design-element-color);
+}
+
+
+
+
+@media screen and (max-width:800px){
+    .navbar__links-menu{
+        display: none;
+    }
+
+    .navbarToggleMenu{
+        display: flex;
+    }
+}
+
