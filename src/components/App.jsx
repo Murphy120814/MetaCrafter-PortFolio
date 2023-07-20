@@ -1,11 +1,12 @@
 import React from 'react';
 
-import { Navbar } from './index';
+import { Navbar, HeroSection } from './index';
 
 function App() {
   return (
     <div className="container">
       <Navbar />
+      <HeroSection />
     </div>
   );
 }

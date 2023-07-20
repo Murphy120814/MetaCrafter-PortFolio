@@ -1,11 +1,14 @@
 import React from 'react';
 import './heroSection.css';
+import HeroSectionPic from './HeroSectionPic';
+import HeroSectionInfo from './HeroSectionInfo';
 
 function HeroSection() {
   return (
-    <div>
-      This is hero section
-    </div>
+    <main className="heroSection__container">
+      <HeroSectionInfo />
+      <HeroSectionPic />
+    </main>
   );
 }
 
