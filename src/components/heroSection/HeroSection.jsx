@@ -5,7 +5,7 @@ import HeroSectionInfo from './HeroSectionInfo';
 
 function HeroSection() {
   return (
-    <main className="heroSection__container">
+    <main className="heroSection__container scale-up-center">
       <HeroSectionInfo />
       <HeroSectionPic />
     </main>

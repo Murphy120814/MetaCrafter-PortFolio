@@ -23,9 +23,35 @@ html {
     border-radius: 2rem;
     box-sizing: content-box;
     padding: 1rem 2rem;
-    color: var(--text-color);
+    color: var(--headline-color);
     border: none;
     font-size: 2rem;
+    cursor: pointer;
+}
+
+.call_to_action_btn:hover{
+    color: var(--cta-button-color);
+    background-color: var(--headline-color);
+}
+
+
+.ghost_button{
+    outline: none;
+    border: 1px solid var(--cta-button-color);
+    background-color: var(--background-color);
+    border-radius: 2rem;
+    box-sizing: content-box;
+    padding: 1rem 2rem;
+    color: var(--headline-color);
+    font-size: 2rem;
+    margin-right: 1rem;
+    cursor: pointer;
+    
+}
+
+.ghost_button:hover{
+    color:var(--cta-button-color) ;
+    border: 1px solid var(--headline-color);
 }
 
 .container {
@@ -40,7 +66,14 @@ html {
 a {
     text-decoration: none;
     text-transform: capitalize;
-    color: var(--text-color);
+    color: var(--headline-color);
+}
+
+a:hover{
+    color:var(--cta-button-color)
+}
+a:focus{
+    color:var(--cta-button-color)
 }
 
 li {

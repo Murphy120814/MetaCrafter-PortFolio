@@ -1,12 +1,13 @@
 import React from 'react';
 
-import { Navbar, HeroSection } from './index';
+import { Navbar, HeroSection, ProjectSection } from './index';
 
 function App() {
   return (
     <div className="container">
       <Navbar />
       <HeroSection />
+      <ProjectSection />
     </div>
   );
 }
