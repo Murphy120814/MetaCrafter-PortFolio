@@ -100,7 +100,7 @@ li {
 
 .vibrate-1 {
     -webkit-animation: vibrate-1 2s ease-in-out infinite both;
-    animation: vibrate-1 2s ease-in-out infinite both;
+    animation: vibrate-1 1s ease-in-out infinite both;
 }
 
 

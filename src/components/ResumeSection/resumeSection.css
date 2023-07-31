@@ -213,6 +213,78 @@
 
 }
 
+@media (max-width:560px){
+    .resumeSection__main-container::after{
+        display: none;
+    }
+
+    .resumeSection__grid-container{
+        grid-template-columns: 4rem 1fr;
+    }
+    .resumeSection__grid-container aside .icon-list{
+        margin: 0;
+        z-index: 1;
+    }
+
+    .resumeSection__grid-container aside .icon-list > li img {
+        width: 3rem;
+        height: 3rem;
+    }
+    .resumeSection__grid-container aside .icon-list > li:after{
+        --_size : 1rem;
+    }
+
+
+    /* now media query for main section  */
+    .resumeSection__grid-container main .eyebrows {
+        color: var(--headline-color);
+        margin: 0;
+        font-size: 3rem;
+    }
+    .resumeSection__grid-container main .intro {
+        color: var(--text-color);
+        text-align: justify;
+        max-width: 100ch;
+        font-size: 1.2rem;
+        line-height: 1.3;
+    }
+    .edu-title {
+        color: var(--headline-color);
+        margin: 3rem 0 0;
+        font-size: 2rem;
+    }
+
+    .resumeSection__grid-container main .job {
+        background: var(--card-color);
+        cursor: pointer;
+        border-radius: 0.5rem;
+        width: 28.5rem;
+        margin-left: 2rem;
+        padding: 1rem;
+        transition: all .2s ease-in-out;
+    }
+    .resumeSection__grid-container main .job-experience .job .role {
+        color: var(--headline-color);
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        line-height: 1.2;
+    }
+    .resumeSection__grid-container main .job-experience .job .year {
+        color: var(--cta-button-color);
+        font-size: 1.1rem;
+    }
+    .resumeSection__grid-container main .job-experience .job .company {
+        color: var(--headline-color);
+        text-transform: capitalize;
+        font-size: 1.3rem;
+    }
+    .resumeSection__grid-container main {
+        grid-column: 2;
+        padding: 7rem 0rem 7rem 2rem;
+        overflow: hidden;
+    }
+}
+
 
 
 
