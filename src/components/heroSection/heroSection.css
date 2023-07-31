@@ -23,8 +23,9 @@
 .heroSectionInfo__container-child p{
     font-size:1.5rem;
     line-height: 1.4;
-    letter-spacing: 1.2;
+    letter-spacing: 1.1;
     color: var(--text-color);
+    text-align: justify;
 }
 .heroSectionInfo__container-child *{
     margin: 1rem 0;

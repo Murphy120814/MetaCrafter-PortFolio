@@ -1,0 +1,221 @@
+.resumeSection__main-container{
+    /* border: 2px solid red; */
+    width: 100%;
+    /* min-height: 80vh; */
+    position: relative;
+}
+
+/* .resumeSection__main-container .title{
+    font-size: 4rem;
+    text-align: center;
+    color: var(--headline-color);
+} */
+
+.resumeSection__main-container::after{
+
+    content: "";
+    /* background-color: var(--cta-button-color); */
+    /* background: linear-gradient(to left top, black 60%, var(--cta-button-color)); */
+    background: linear-gradient(to left ,var(--cta-button-color) 60%, black );
+
+    clip-path: circle(20% at 18% 45%);
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -518px;
+    left: -79px;
+    z-index: -1;
+    
+}
+
+
+/* Now designing the aside section  */
+
+.resumeSection__grid-container{
+    display: grid;
+    grid-template-columns: 15rem 1fr;
+    gap: 5vw;
+    grid-auto-flow: dense;
+}
+
+/* main section design  */
+.resumeSection__grid-container main{
+    padding: 7rem 2rem;
+    grid-column: 2;
+    /* border: 2px solid green; */
+    /* width: calc(100% - 15rem); */
+    overflow: hidden;
+    /* You need to change this for the container of the screen */
+}
+
+.resumeSection__grid-container main .eyebrows{
+    color: var(--headline-color);
+    font-size: 4rem ; 
+    margin: 0;
+}
+.resumeSection__grid-container main .intro{
+    font-size: 1.5rem;
+    line-height: 1.4;
+    color: var(--text-color);
+    max-width: 100ch;
+    text-align: justify;
+}
+
+
+.resumeSection__grid-container main .job-experience{
+    display: grid;
+    gap:2rem;
+    justify-content: start;
+    grid-auto-flow: column;
+    overflow-x: auto;
+    padding-block: 2rem ;
+    position: relative;
+    /* for firefox */
+    scrollbar-color: var(--cta-button-color) var(--card-color);
+    
+}
+
+.resumeSection__grid-container main .job{
+        width: 28.5rem;
+        border-radius: 1rem;
+        padding: 2rem;
+        background:var(--card-color);
+        margin-left: 2rem;
+        transition: 0.2s ease-in-out ;
+        cursor: pointer;
+    
+}
+.resumeSection__grid-container main .job:hover{
+    transform: scale(1.1);
+}
+
+/* design for scrollbar */
+.resumeSection__grid-container main .job-experience::-webkit-scrollbar{
+    height: 0.75rem;
+}
+.resumeSection__grid-container main .job-experience::-webkit-scrollbar-track{
+    background-color:var(--card-color);
+    border-radius: 100vw;
+}
+.resumeSection__grid-container main .job-experience::-webkit-scrollbar-thumb{
+    background-color: var(--cta-button-color);
+    border-radius: 100vw;
+
+}
+
+.resumeSection__grid-container main .job-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 1rem;
+
+
+}
+
+
+.resumeSection__grid-container main .job-experience .job .role{
+    font-size: 2rem;
+    color: var(--headline-color);
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+
+.resumeSection__grid-container main .job-experience .job:hover .role{
+    color: var(--cta-button-color);
+}
+
+.resumeSection__grid-container main .job-experience .job .company{
+    color: var(--headline-color);
+    font-size: 1.725rem;
+    text-transform: capitalize;
+}   
+
+.resumeSection__grid-container main .job-experience .job .company-info{
+    color: var(--text-color);
+    font-size: 1.1rem;
+    line-height: 1.4;
+}
+
+.resumeSection__grid-container main .job-experience .job .year{
+    color: var(--cta-button-color);
+    font-size: 1.25rem;
+}
+
+
+
+
+
+/* titles design */
+.edu-title{
+    color: var(--headline-color);
+    font-size: 3rem;
+    margin: 5rem 0 0 0;
+}
+.edu-title span{
+    color: var(--cta-button-color);
+}
+
+
+
+/* aside section design  */
+.resumeSection__grid-container aside{
+    /* border: 2px solid yellow; */
+    grid-column: 1;
+    align-self: stretch;
+}
+
+
+.resumeSection__grid-container aside .icon-list{
+    position: relative;
+    display: grid;
+    height: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-left: clamp(5rem, 0vw, 10rem);
+    /* margin: 5rem; */
+    gap: 3rem;
+    border-left: 2px solid var(--cta-button-color);
+    align-content: center;
+    z-index: -1;
+    
+}
+
+.resumeSection__grid-container aside .icon-list > li{
+    position: relative;
+    padding-left: 2rem;
+    margin-top: 3rem;
+    
+}
+
+.resumeSection__grid-container aside .icon-list > li img{
+    width: 5rem;
+    height: 5rem;
+}
+
+
+.resumeSection__grid-container aside .icon-list> li::after{
+    --_size: 2rem;
+    content: "";
+    display: block;
+    position: absolute;
+    width: var(--_size);
+    aspect-ratio: 1;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    transform: translate(-50%);
+    
+    background-color: var(--design-element-color);
+
+    
+
+}
+
+
+
+
+
+
+

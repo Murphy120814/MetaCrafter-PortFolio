@@ -54,3 +54,118 @@ export const cards = [
     viewLink: 'https://www.google.com',
   },
 ];
+
+export const educationCards = [
+  {
+    id: '1',
+    year: '2023',
+    roleName: 'student',
+    companyName: 'xyz',
+    someInfo: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..',
+  },
+  {
+    id: '2',
+    year: '2023',
+    roleName: 'student',
+    companyName: 'xyz',
+    someInfo: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..',
+  },
+  {
+    id: '3',
+    year: '2023',
+    roleName: 'student',
+    companyName: 'xyz',
+    someInfo: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..',
+  },
+  {
+    id: '4',
+    year: '2023',
+    roleName: 'student',
+    companyName: 'xyz',
+    someInfo: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..',
+  },
+  {
+    id: '5',
+    year: '2023',
+    roleName: 'student',
+    companyName: 'xyz',
+    someInfo: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..',
+  },
+  {
+    id: '6',
+    year: '2023',
+    roleName: 'student',
+    companyName: 'xyz',
+    someInfo: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..',
+  },
+  {
+    id: '7',
+    year: '2023',
+    roleName: 'student',
+    companyName: 'xyz',
+    someInfo: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..',
+  },
+  {
+    id: '8',
+    year: '2023',
+    roleName: 'student',
+    companyName: 'xyz',
+    someInfo: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..',
+  },
+
+];
+
+export const certification = [
+  {
+    id: '11',
+    year: '2023',
+    roleName: 'student',
+    companyName: 'xyz',
+    someInfo: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..',
+  },
+  {
+    id: '12',
+    year: '2023',
+    roleName: 'student',
+    companyName: 'xyz',
+    someInfo: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..',
+  },
+  {
+    id: '13',
+    year: '2023',
+    roleName: 'student',
+    companyName: 'xyz',
+    someInfo: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..',
+  },
+];
+
+export const workExp = [
+  {
+    id: '21',
+    year: '2023',
+    roleName: 'student',
+    companyName: 'xyz',
+    someInfo: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..',
+  },
+  {
+    id: '22',
+    year: '2023',
+    roleName: 'student',
+    companyName: 'xyz',
+    someInfo: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..',
+  },
+  {
+    id: '23',
+    year: '2023',
+    roleName: 'student',
+    companyName: 'xyz',
+    someInfo: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..',
+  },
+  {
+    id: '24',
+    year: '2023',
+    roleName: 'student',
+    companyName: 'xyz',
+    someInfo: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..',
+  },
+];

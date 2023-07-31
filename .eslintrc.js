@@ -32,7 +32,7 @@ module.exports = {
     'linebreak-style': 0,
     'react/state-in-constructor': 0,
     'import/prefer-default-export': 0,
-    'max-len': [2, 400],
+    'max-len': [2, 600],
     'max-classes-per-file': ['error', 5],
     'object-curly-newline': 0,
     'react/jsx-filename-extension': 0,

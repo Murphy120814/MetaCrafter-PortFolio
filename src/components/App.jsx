@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Navbar, HeroSection, ProjectSection } from './index';
+import { Navbar, HeroSection, ProjectSection, ResumeSection } from './index';
 
 function App() {
   return (
@@ -8,6 +8,7 @@ function App() {
       <Navbar />
       <HeroSection />
       <ProjectSection />
+      <ResumeSection />
     </div>
   );
 }

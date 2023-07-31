@@ -4,7 +4,7 @@ function HeroSectionTypeAnimation() {
   const [text, setText] = useState('Front-End Developer');
 
   useEffect(() => {
-    const textValues = ['Front-End Developer.', 'Designer.'];
+    const textValues = ['Front-End Developer.', 'Designer.', 'Freelancer.'];
     let currentIndex = 0;
 
     const interval = setInterval(() => {

@@ -8,6 +8,7 @@ html {
     margin: 0;
     box-sizing: border-box;
     font-size: 62.5%;
+    /* color-scheme: dark; */
 
     
     background-color: var(--background-color);
@@ -89,6 +90,7 @@ li {
     --background-color: #000000;
     --footer-color: #3D0000;
     --design-element-color: #950101;
+    --card-color:#17141d;
 }
 
 
