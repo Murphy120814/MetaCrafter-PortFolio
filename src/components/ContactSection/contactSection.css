@@ -117,7 +117,7 @@
 }
 
 
-.inputBox button[type="submit"]{
+.inputBox input[type="submit"]{
     background-color: var(--cta-button-color);
     color: var(--headline-color);
     border: none;

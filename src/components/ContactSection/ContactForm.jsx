@@ -75,9 +75,7 @@ function ContactForm() {
 
             <div className="row100">
               <div className="inputBox">
-                <button type="submit" disabled={isSubmitting}>
-                  Send
-                </button>
+                <input name="submit" type="submit" disabled={isSubmitting} value="Send" />
               </div>
             </div>
           </div>
