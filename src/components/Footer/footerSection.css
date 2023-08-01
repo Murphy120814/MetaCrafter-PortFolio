@@ -8,6 +8,7 @@
     background-color: var(--card-color);
     border-top-left-radius: 3rem;
     border-top-right-radius: 3rem;
+    padding: 1rem;
 }
 
 .footerSection-container h3{

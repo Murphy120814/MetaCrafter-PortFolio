@@ -237,3 +237,15 @@
 
 
 }
+
+@media (max-width:450px) {
+    .info .infoBox div{
+        display: flex;
+        flex-direction: column;
+    }
+    .info .infoBox div p {
+        /* letter-spacing: 2px; */
+        font-size: 1rem;
+        word-wrap: break-word;
+    }
+}
