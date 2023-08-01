@@ -6,7 +6,7 @@ import LocationMap from './LocationMap';
 
 function ContactSection() {
   return (
-    <div className="contactSection__main-container">
+    <div className="contactSection__main-container" id="contact">
       <h2 className="contact-title">Get In Touch</h2>
 
       <div className="contactSection__box">

@@ -13,8 +13,8 @@ function AsideContactInfo() {
       <h3>Contact Info.</h3>
       <div className="infoBox">
         <div>
-          <span><a href="mailto:prathmdev@gmail.com" target="_blank" rel="noreferrer"><img src={mailIcon} alt="mailVector" /></a></span>
-          <p>prathmdev@gmail.com</p>
+          <span><a href="mailto:prathm12.dev@gmail.com" target="_blank" rel="noreferrer"><img src={mailIcon} alt="mailVector" /></a></span>
+          <p>prathm12.dev@gmail.com</p>
         </div>
         <div>
           <span><img src={locationIcon} alt="locationVector" /></span>

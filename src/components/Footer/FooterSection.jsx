@@ -1,6 +1,6 @@
 import React from 'react';
 import FooterContent from './FooterContent';
-import "./footerSection.css"
+import './footerSection.css';
 
 function FooterSection() {
   return (

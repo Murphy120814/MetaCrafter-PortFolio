@@ -68,6 +68,7 @@ a {
     text-decoration: none;
     text-transform: capitalize;
     color: var(--headline-color);
+    font-weight: bolder;
 }
 
 a:hover{

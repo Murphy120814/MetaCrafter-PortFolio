@@ -1,8 +1,4 @@
 import React from 'react';
-import linkedIn from '../../assets/linkedin.svg';
-import mediumIcon from '../../assets/medium-svgrepo-com.svg';
-import telegramLogo from '../../assets/telegram-svgrepo-com.svg';
-import discordLogo from '../../assets/discord-svgrepo-com.svg';
 
 function FooterContent() {
   return (
