@@ -1,5 +1,5 @@
 import React from 'react';
-import { Formik, Field, ErrorMessage } from 'formik';
+import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 
 function ContactForm() {
@@ -29,7 +29,8 @@ function ContactForm() {
       }}
     >
       {({ isSubmitting }) => (
-        <form
+        <Form
+          name="prathm-meta"
           netlify
           data-netlify="true"
           data-netlify-honeypot="bot-field"
@@ -80,7 +81,7 @@ function ContactForm() {
             </div>
           </div>
 
-        </form>
+        </Form>
       )}
     </Formik>
   );
