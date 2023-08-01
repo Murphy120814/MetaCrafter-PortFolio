@@ -245,7 +245,13 @@
     }
     .info .infoBox div p {
         /* letter-spacing: 2px; */
-        font-size: 1rem;
+        font-size: 1.2rem;
         word-wrap: break-word;
+    }
+    .info h3 {
+        color: var(--background-color);
+        margin-bottom: 2rem;
+        text-align: center;
+        font-size: 2rem;
     }
 }

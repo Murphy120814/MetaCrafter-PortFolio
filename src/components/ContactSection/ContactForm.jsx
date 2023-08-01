@@ -29,7 +29,13 @@ function ContactForm() {
       }}
     >
       {({ isSubmitting }) => (
-        <Form netlify data-netlify="true" className="contact form">
+        <Form
+          netlify="true"
+          data-netlify="true"
+          data-netlify-honeypot="bot-field"
+          className="contact form"
+          method="post"
+        >
           <h3>Send a Message:</h3>
           <div className="formBox">
             <div className="row50">
