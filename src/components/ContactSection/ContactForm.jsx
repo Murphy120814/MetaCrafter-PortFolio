@@ -1,5 +1,5 @@
 import React from 'react';
-import { Formik, Form, Field, ErrorMessage } from 'formik';
+import { Formik, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 
 function ContactForm() {
@@ -29,7 +29,7 @@ function ContactForm() {
       }}
     >
       {({ isSubmitting }) => (
-        <Form
+        <form
           name="contact"
           className="contact form"
           method="post"
@@ -79,7 +79,7 @@ function ContactForm() {
             </div>
           </div>
 
-        </Form>
+        </form>
       )}
     </Formik>
   );
