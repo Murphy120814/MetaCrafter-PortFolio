@@ -21,10 +21,15 @@ function ContactForm() {
         message: '',
       }}
       validationSchema={validationSchema}
-      onSubmit={(values, { setSubmitting }) => {
+      onSubmit={(values, { setSubmitting,isValid }) => {
+        if (!isValid) {
+          console.log('Form is not valid. Cannot submit.');
+          return;
+        }
         //
         // Netlify Forms will handle the form submission automatically.
         // You don't need to use Axios or custom serverless functions for this setup.
+        console.log('Form data:', values);
         setSubmitting(false);
       }}
     >
