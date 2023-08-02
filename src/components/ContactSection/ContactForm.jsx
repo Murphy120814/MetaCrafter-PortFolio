@@ -1,5 +1,5 @@
 import React from 'react';
-import { Formik, Field, ErrorMessage } from 'formik';
+import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 
 function ContactForm() {
@@ -29,14 +29,12 @@ function ContactForm() {
       }}
     >
       {({ isSubmitting }) => (
-        <form
+        <Form
           name="contact"
-          netlify
-          data-netlify="true"
-          data-netlify-honeypot="bot-field"
           className="contact form"
           method="post"
         >
+          <input type="hidden" name="form-name" value="contact" />
           <h3>Send a Message:</h3>
           <div className="formBox">
             <div className="row50">
@@ -81,7 +79,7 @@ function ContactForm() {
             </div>
           </div>
 
-        </form>
+        </Form>
       )}
     </Formik>
   );
