@@ -16,7 +16,8 @@
     content: "";
     /* background-color: var(--cta-button-color); */
     /* background: linear-gradient(to left top, black 60%, var(--cta-button-color)); */
-    background: linear-gradient(to left ,var(--cta-button-color) 60%, black );
+    background: var(--left-lowerCircle-color);
+    /* linear-gradient(to left ,var(--cta-button-color) 60%,var(--background-color)); */
 
     clip-path: circle(20% at 18% 45%);
     display: block;
@@ -146,7 +147,7 @@
 
 .resumeSection__grid-container main .job-experience .job .company-info{
     color: var(--text-color);
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     line-height: 1.4;
 }
 
@@ -200,6 +201,9 @@
     padding-left: 2rem;
     margin-top: 3rem;
     
+}
+.resumeSection__grid-container aside .icon-list li:first-child{
+    margin-top: 17rem;
 }
 
 .resumeSection__grid-container aside .icon-list > li img{
@@ -295,6 +299,9 @@
         grid-column: 2;
         padding: 7rem 0rem 7rem 2rem;
         overflow: hidden;
+    }
+    .resumeSection__grid-container aside .icon-list li:first-child{
+        margin-top: 0;
     }
 }
 

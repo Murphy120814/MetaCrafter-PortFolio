@@ -20,7 +20,8 @@
 .projectSection__container-flex::before{
     content: "";
     /* background-color: var(--cta-button-color); */
-    background: linear-gradient(var(--cta-button-color), black);
+    background:var(--right-middleCircle-color); 
+    /* linear-gradient(var(--cta-button-color), var(--background-color)); */
     clip-path: circle(30% at 72% 60%);
     width: 100%;
     height: 100%;
@@ -33,7 +34,8 @@
  
     content: "";
     /* background-color: var(--cta-button-color); */
-    background: linear-gradient(to left top, black 60%, var(--cta-button-color));
+    background: var(--left-upperCircle-color);
+    /* linear-gradient(to left top, var(--background-color) 60%, var(--cta-button-color)); */
     /* background: linear-gradient(to left ,var(--cta-button-color), black); */
 
     clip-path: circle(18% at 15% 40%);
@@ -74,7 +76,7 @@
     border-radius: 2rem;
     background:var(--card-color);
     opacity: 0.7;
-    box-shadow: 1rem 0 7rem var(--background-color);
+    box-shadow: var(--card-shadow);
     transition: 0.2s ease-in-out;
     position: relative;
     overflow: hidden;
@@ -97,7 +99,7 @@
 }
 
 .card  h2{
-    color: #858282;
+    color: var(--card-number-color);
     font-size: 20rem;
     position: absolute;
     top: -227px;

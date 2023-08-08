@@ -18,8 +18,8 @@ function ProjectCardTemplate({ cardNumber, title, para, technology, readLink, vi
             <TechStack technologies={technology} />
           </div>
           <div className="btn-redirect">
-            <ViewResourceRedirect readMoreLink={readLink} />
-            <ViewWebsiteRedirect viewLink={viewLink} />
+            <ViewResourceRedirect readMoreLink={readLink}> Code base</ViewResourceRedirect>
+            <ViewWebsiteRedirect viewLink={viewLink}> Demo </ViewWebsiteRedirect>
           </div>
 
         </div>

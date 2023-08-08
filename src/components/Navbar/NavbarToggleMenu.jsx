@@ -2,13 +2,13 @@ import React, { useState } from 'react';
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
 import NavbarMenuLinks from './NavbarMenuLinks';
 
-function NavbarToggleMenu() {
+function NavbarToggleMenu({ darkMode }) {
   const [toggleMenu, setToggleMenu] = useState(false);
   return (
     <div className="navbarToggleMenu ">
       {toggleMenu ? (
         <RiCloseLine
-          color="#FF0000"
+          color={darkMode ? '#FF0000' : '#c97712'}
           size={27}
           onClick={() => {
             setToggleMenu(false);
@@ -16,7 +16,7 @@ function NavbarToggleMenu() {
         />
       ) : (
         <RiMenu3Line
-          color="#FF0000"
+          color={darkMode ? '#FF0000' : '#c97712'}
           size={27}
           onClick={() => {
             setToggleMenu(true);

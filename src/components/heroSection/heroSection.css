@@ -89,7 +89,7 @@
     left:0;
     height: 100%;
     width: 100%;
-    background-color: #000;
+    background-color: var(--background-color);
     border-left: 2px solid var(--cta-button-color);
     animation: animate 6s steps(20) infinite;
 

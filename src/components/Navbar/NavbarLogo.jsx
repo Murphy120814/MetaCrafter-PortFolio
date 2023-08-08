@@ -1,11 +1,12 @@
 import React from 'react';
 import { Link } from 'react-scroll';
-import Logo from '../../assets/metacrafter_new_logo-1.png';
+import LogoDark from '../../assets/finalLogo_dark.png';
+import LogoLight from '../../assets/finalLogoLightMode.png';
 
-function NavbarLogo() {
+function NavbarLogo({ darkMode }) {
   return (
     <Link to="home" smooth duration={500} offset={-80}>
-      <img src={Logo} alt="MetaCrafted Click to go Home" />
+      {darkMode ? <img src={LogoDark} alt="MetaCrafted Click to go Home" /> : <img src={LogoLight} alt="MetaCrafted Click to go Home" />}
     </Link>
 
   );

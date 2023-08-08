@@ -82,17 +82,77 @@ li {
     list-style: none;
 }
 
-
-
-:root {
+:root{
     --cta-button-color: #FF0000;
     --headline-color: #FFFFFF;
     --text-color: #E5E5E5;
     --background-color: #000000;
-    --footer-color: #3D0000;
     --design-element-color: #950101;
     --card-color:#17141d;
+    --navbar-border-color:#555551;
+    --card-number-color:#858282;
+    --card-shadow :1rem 0 7rem var(--background-color);
+    --toggleMenuLinks-color:var(--background-color);
+    --right-middleCircle-color:linear-gradient(var(--cta-button-color), var(--background-color));
+    --left-upperCircle-color:linear-gradient(to left top, var(--background-color) 60%, var(--cta-button-color));
+    --left-lowerCircle-color:linear-gradient(to left ,var(--cta-button-color) 60%,var(--background-color));
+
 }
+
+.lightMode{
+    --cta-button-color: #c97712;
+    --headline-color: #000000;
+    --text-color: #000000;
+    --background-color: #FFF8EA  ;
+    --design-element-color: #E5BA73;
+    --card-color: #FAEAB1;
+    --navbar-border-color:#555551;
+    --card-number-color:#6d6666d4;
+    --card-shadow:none;
+    --toggleMenuLinks-color:#000000;
+    --right-middleCircle-color: linear-gradient(var(--cta-button-color) 40%, var(--background-color));
+    --left-upperCircle-color : linear-gradient(to left top, var(--background-color) 45%, var(--cta-button-color));
+    --left-lowerCircle-color:linear-gradient(to left ,var(--cta-button-color) 60%,var(--background-color));
+}
+
+/* 
+
+llight mode final option :
+   --cta-button-color: #c97712;
+    --headline-color: #000000;
+    --text-color: #000000;
+    --background-color: #FFF8EA  ;
+    --design-element-color: #E5BA73;
+    --card-color: #FAEAB1;
+    --navbar-border-color:#555551;
+    --card-number-color:#6d6666d4;
+    
+    ______________________________________
+
+
+light mode option one :
+   --cta-button-color: #C58940;
+    --headline-color: #000000;
+    --text-color: #000000;
+    --background-color: #FFF8EA  ;
+    --footer-color: #3D0000;
+    --design-element-color: #E5BA73;
+    --card-color: #FAEAB1;
+    --navbar-border-color:#555551;
+    --card-number-color:#6d6666d4;
+ */
+/* 
+ --footer-color: #3D0000;
+dark mode :
+     --cta-button-color: #FF0000;
+    --headline-color: #FFFFFF;
+    --text-color: #E5E5E5;
+    --background-color: #000000;
+    --design-element-color: #950101;
+    --card-color:#17141d;
+    --navbar-border-color:#555551;
+    --card-number-color:#858282;
+ */
 
 
 
