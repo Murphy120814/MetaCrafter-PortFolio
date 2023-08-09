@@ -4,9 +4,12 @@ import { Navbar, HeroSection, ProjectSection, ResumeSection, ContactSection, Foo
 
 function App() {
   const [darkMode, setDarkMode] = useState(true); // Default to dark mode
+  const [alertShown, setAlertShown] = useState(false);
+
   const showAlertIfNeeded = () => {
-    if (window.innerWidth < 800) {
-      window.alert('May I Suggest? For a fuller experience, kindly explore my website on a larger screen such as Laptop.');
+    if (window.innerWidth < 1000 && !alertShown) {
+      window.alert('May I Suggest? For a fuller experience, kindly explore my website on a larger screens such as Laptop. ');
+      setAlertShown(true);
     }
   };
 
@@ -21,7 +24,7 @@ function App() {
     return () => {
       window.removeEventListener('resize', showAlertIfNeeded);
     };
-  }, []);
+  }, [alertShown]);
   useEffect(() => {
     const savedTheme = localStorage.getItem('theme');
     if (savedTheme === 'light') {

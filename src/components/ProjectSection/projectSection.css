@@ -154,6 +154,12 @@
 }
 
 
+@media (max-width:1000px){
+    .card__container-main_flex{
+        gap: 10px;
+    }
+}
+
 @media (max-width:800px)  {
     .projectSection__container-flex::before{
         display: none;
