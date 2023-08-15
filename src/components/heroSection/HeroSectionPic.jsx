@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import HeroSectionAnotherPic from './HeroSectionAnotherPic';
-import { imageBase64 } from '../../constants/constants';
+import { imageBase64, imageBase64_1450by1380, imageBase64_1375by1310, imageBase64by4k } from '../../constants/constants';
 
 function HeroSectionPic() {
   const canvasRef = useRef(null);
@@ -154,7 +154,8 @@ function HeroSectionPic() {
         : (
           <>
             <canvas ref={canvasRef} id="canvas1" />
-            <img src={imageBase64} alt="imageAvatar" id="image1" />
+
+            <img src={(windowWidth > 2000) ? imageBase64by4k : ((windowWidth <= 1450) && (windowWidth >= 1380)) ? imageBase64_1450by1380 : ((windowWidth <= 1378) && (windowWidth >= 1305) ? imageBase64_1375by1310 : imageBase64)} alt="imageAvatar" id="image1" />
           </>
         )}
     </div>
