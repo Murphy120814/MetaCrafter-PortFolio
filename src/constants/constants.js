@@ -120,7 +120,7 @@ export const workExp = [
     roleName: "UPSC aspirant",
     companyName: "student",
     someInfo:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..",
+      "Took a two-year hiatus for UPSC Civil Services, fostering resilience, perseverance, and continual learning experiences.",
   },
   {
     id: "23",
