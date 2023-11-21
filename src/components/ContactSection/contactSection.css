@@ -159,6 +159,7 @@
 .socialMedia{
     margin: 40px 0 0 0;
     display: flex;
+    flex-gap:4px;
     padding: 0;
     align-items: first baseline;
     width: 100%;
@@ -258,7 +259,7 @@
     .socialMedia{
         margin-top: 1rem;
         flex-wrap: wrap ;
-        
+
         justify-content: center;
         /* padding-left: 3rem; */
     }

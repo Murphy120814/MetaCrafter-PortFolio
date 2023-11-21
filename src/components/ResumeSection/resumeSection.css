@@ -97,7 +97,7 @@
         background:var(--card-color);
         margin-left: 2rem;
         transition: 0.2s ease-in-out ;
-        cursor: pointer;
+        
     
 }
 .resumeSection__grid-container main .job:hover{

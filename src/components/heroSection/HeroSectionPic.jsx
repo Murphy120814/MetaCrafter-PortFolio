@@ -1,6 +1,11 @@
-import React, { useEffect, useRef, useState } from 'react';
-import HeroSectionAnotherPic from './HeroSectionAnotherPic';
-import { imageBase64, imageBase64_1450by1380, imageBase64_1375by1310, imageBase64by4k } from '../../constants/constants';
+import React, { useEffect, useRef, useState } from "react";
+import HeroSectionAnotherPic from "./HeroSectionAnotherPic";
+import {
+  imageBase64,
+  imageBase64_1450by1380,
+  imageBase64_1375by1310,
+  imageBase64by4k,
+} from "../../constants/constants";
 
 function HeroSectionPic() {
   const canvasRef = useRef(null);
@@ -13,10 +18,10 @@ function HeroSectionPic() {
       setWindowWidth(window.innerWidth);
     };
 
-    window.addEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
 
     return () => {
-      window.removeEventListener('resize', handleResize);
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
   useEffect(() => {
@@ -24,7 +29,7 @@ function HeroSectionPic() {
     if (!canvas) {
       return;
     }
-    const ctx = canvas.getContext('2d', { willReadFrequently: true });
+    const ctx = canvas.getContext("2d", { willReadFrequently: true });
     const container = containerRef.current;
     canvas.width = container.clientWidth;
     canvas.height = container.clientHeight;
@@ -65,8 +70,10 @@ function HeroSectionPic() {
           this.vy += this.force * Math.sin(this.angle);
         }
 
-        this.x += (this.vx *= this.friction) + (this.originX - this.x) * this.ease;
-        this.y += (this.vy *= this.friction) + (this.originY - this.y) * this.ease;
+        this.x +=
+          (this.vx *= this.friction) + (this.originX - this.x) * this.ease;
+        this.y +=
+          (this.vy *= this.friction) + (this.originY - this.y) * this.ease;
       }
     }
 
@@ -75,7 +82,7 @@ function HeroSectionPic() {
         this.width = width;
         this.height = height;
         this.particlesArray = [];
-        this.image = document.getElementById('image1');
+        this.image = document.getElementById("image1");
         this.centerX = this.width * 0.5;
         this.centerY = this.height * 0.5;
         this.x = this.centerX - this.image.width * 0.5;
@@ -133,7 +140,7 @@ function HeroSectionPic() {
     const effect = new Effect(canvas.width, canvas.height);
     effect.init(ctx);
     const boundHandleMouseMove = effect.handleMouseMove.bind(effect);
-    container.addEventListener('mousemove', boundHandleMouseMove);
+    container.addEventListener("mousemove", boundHandleMouseMove);
 
     function animate() {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -144,20 +151,33 @@ function HeroSectionPic() {
     animate();
 
     return () => {
-      container.removeEventListener('mousemove', boundHandleMouseMove);
+      container.removeEventListener("mousemove", boundHandleMouseMove);
     };
   }, [windowWidth]);
 
   return (
     <div ref={containerRef} className="heroSectionPic__container">
-      {windowWidth <= 1300 ? <HeroSectionAnotherPic />
-        : (
-          <>
-            <canvas ref={canvasRef} id="canvas1" />
+      {windowWidth <= 1300 ? (
+        <HeroSectionAnotherPic />
+      ) : (
+        <>
+          <canvas ref={canvasRef} id="canvas1" />
 
-            <img src={(windowWidth > 2000) ? imageBase64by4k : ((windowWidth <= 1450) && (windowWidth >= 1380)) ? imageBase64_1450by1380 : ((windowWidth <= 1378) && (windowWidth >= 1305) ? imageBase64_1375by1310 : imageBase64)} alt="imageAvatar" id="image1" />
-          </>
-        )}
+          <img
+            src={
+              windowWidth > 2000
+                ? imageBase64by4k
+                : windowWidth <= 1450 && windowWidth >= 1380
+                ? imageBase64_1450by1380
+                : windowWidth <= 1378 && windowWidth >= 1305
+                ? imageBase64_1375by1310
+                : imageBase64
+            }
+            alt="imageAvatar"
+            id="image1"
+          />
+        </>
+      )}
     </div>
   );
 }
