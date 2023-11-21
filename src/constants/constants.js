@@ -7,8 +7,18 @@ import firebasepng from "../assets/firebase_28dp.png";
 import materialUI from "../assets/material-ui-file.svg";
 
 export const cards = [
+  
+  
   {
     cardNumber: "1",
+    projectName: "CineFlix",
+    info: " Designed and built Cineflix with Material-UI and React, implementing secure authentication through TheMovieDB API, showcasing dynamic application development skills.",
+    technology: [html, materialUI, js, react_svg],
+    readLink: "https://github.com/Murphy120814/cine_flix_movie_recommendation",
+    viewLink: "https://cineflix.frontendmeta.dev",
+  },
+  {
+    cardNumber: "2",
     projectName: "Fit Forms",
     info: "Developed and Launched FitForms for fitness tracking with JavaScript, React, HTML, Tailwind CSS, and Firebase Auth for secure, interactive, and functional user experiences.",
     technology: [tailwind_svg, firebasepng, js, react_svg],
@@ -16,20 +26,12 @@ export const cards = [
     viewLink: "https://fitforms.frontendmeta.dev",
   },
   {
-    cardNumber: "2",
+    cardNumber: "3",
     projectName: "Hungry Hub",
     info: "Created a Swiggy clone using Swiggy's public API to simulate the Swiggy app. Implemented the frontend using React and Tailwind CSS, demonstrating proficiency in frontend development and API",
     technology: [html, tailwind_svg, js, react_svg],
     readLink: "https://github.com/Murphy120814/HungryHub",
     viewLink: "https://hungryhub.frontendmeta.dev",
-  },
-  {
-    cardNumber: "3",
-    projectName: "CineFlix",
-    info: " Designed and built Cineflix with Material-UI and React, implementing secure authentication through TheMovieDB API, showcasing dynamic application development skills.",
-    technology: [html, materialUI, js, react_svg],
-    readLink: "https://github.com/Murphy120814/cine_flix_movie_recommendation",
-    viewLink: "https://cineflix.frontendmeta.dev",
   },
 ];
 
