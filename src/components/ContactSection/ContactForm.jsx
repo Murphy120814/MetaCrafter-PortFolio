@@ -34,7 +34,7 @@ function ContactForm() {
         console.log("Form data:", values);
         setSubmitting(false);
       }}>
-      {({ isValid }) => (
+      {({ isSubmitting }) => (
         <form name="contact" className="contact form" method="post">
           <input type="hidden" name="form-name" value="contact" />
           <h3>Send a Message:</h3>
@@ -100,7 +100,7 @@ function ContactForm() {
                   name="submit"
                   type="submit"
                   value="Send"
-                  disabled={isValid}
+                  disabled={isSubmitting}
                 />
               </div>
             </div>

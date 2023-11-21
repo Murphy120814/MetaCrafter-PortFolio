@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from "react";
 
 function HeroSectionTypeAnimation() {
-  const [text, setText] = useState('Front-End Developer');
+  const [text, setText] = useState("Front-End Developer");
 
   useEffect(() => {
-    const textValues = ['Front-End Developer.', 'Designer.', 'Freelancer.'];
+    const textValues = ["Front-End Developer.", "Designer.", "Blogger"];
     let currentIndex = 0;
 
     const interval = setInterval(() => {
