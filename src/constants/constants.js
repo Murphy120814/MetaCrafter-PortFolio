@@ -33,6 +33,14 @@ export const cards = [
     readLink: "https://github.com/Murphy120814/HungryHub",
     viewLink: "https://hungryhub.frontendmeta.dev",
   },
+  {
+    cardNumber: "4",
+    projectName: "MyToDoApp",
+    info: " Designed and built MyToDoApp using React, Javascript, Tailwind and HTML which contains adding to do list,deleting particular item and striking through if done and undo if wanted.",
+    technology: [html, tailwind_svg, js, react_svg],
+    readLink: "https://github.com/Murphy120814/My-To-Do-App",
+    viewLink: "https://mytodo.frontendmeta.dev",
+  },
 ];
 
 export const educationCards = [
