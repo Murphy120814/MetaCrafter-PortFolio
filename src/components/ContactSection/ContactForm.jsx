@@ -3,12 +3,13 @@ import { Formik, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 
 function ContactForm() {
+  const phoneRegExp = /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/
   const validationSchema = Yup.object().shape({
     name: Yup.string().required("Name is required"),
     email: Yup.string()
       .email("Invalid email address")
       .required("Email is required"),
-    jobRole: Yup.string().required("Job Role is required"),
+    phoneNumber: Yup.string().matches(phoneRegExp, 'Phone number is not valid').optional(),
     companyName: Yup.string().required("Company Name is required"),
     message: Yup.string().required("Message is required"),
   });
@@ -18,30 +19,23 @@ function ContactForm() {
       initialValues={{
         name: "",
         email: "",
-        jobRole: "",
+        phoneNumber:"",
         companyName: "",
         message: "",
       }}
       validationSchema={validationSchema}
-      onSubmit={(values, { setSubmitting, isValid }) => {
-        if (!isValid) {
-          console.log("Form is not valid. Cannot submit.");
-          return;
-        }
-        //
-        // Netlify Forms will handle the form submission automatically.
-        // You don't need to use Axios or custom serverless functions for this setup.
+      onSubmit={(values, { setSubmitting }) => {
         console.log("Form data:", values);
         setSubmitting(false);
       }}>
-      {({ isSubmitting }) => (
+      {({ isSubmitting, isValid, dirty }) => (
         <form name="contact" className="contact form" method="post">
           <input type="hidden" name="form-name" value="contact" />
           <h3>Send a Message:</h3>
           <div className="formBox">
             <div className="row50">
               <div className="inputBox">
-                <label htmlFor="name">Name</label>
+                <label htmlFor="name">Name <span style={{color:"orangered"}}>*</span></label>
                 <Field type="text" name="name" id="name" />
                 <ErrorMessage
                   name="name"
@@ -51,7 +45,7 @@ function ContactForm() {
               </div>
 
               <div className="inputBox">
-                <label htmlFor="email">Email</label>
+                <label htmlFor="email">Email <span style={{color:"orangered"}}>*</span></label>
                 <Field type="email" name="email" id="email" />
                 <ErrorMessage
                   name="email"
@@ -62,17 +56,17 @@ function ContactForm() {
             </div>
             <div className="row50">
               <div className="inputBox">
-                <label htmlFor="jobRole">Job Role</label>
-                <Field type="text" name="jobRole" id="jobRole" />
+                <label htmlFor="jobRole">Phone Number</label>
+                <Field type="text" name="phoneNumber" id="phoneNumber" />
                 <ErrorMessage
-                  name="jobRole"
+                  name="phoneNumber"
                   component="div"
                   className="error-message"
                 />
               </div>
 
               <div className="inputBox">
-                <label htmlFor="companyName">Company Name</label>
+                <label htmlFor="companyName">Company Name <span style={{color:"orangered"}}>*</span></label>
                 <Field type="text" name="companyName" id="companyName" />
                 <ErrorMessage
                   name="companyName"
@@ -84,7 +78,7 @@ function ContactForm() {
 
             <div className="row100">
               <div className="inputBox">
-                <label htmlFor="message">Message</label>
+                <label htmlFor="message">Message <span style={{color:"orangered"}}>*</span></label>
                 <Field as="textarea" name="message" id="message" />
                 <ErrorMessage
                   name="message"
@@ -100,7 +94,7 @@ function ContactForm() {
                   name="submit"
                   type="submit"
                   value="Send"
-                  disabled={isSubmitting}
+                  disabled={isSubmitting || !(isValid && dirty)}
                 />
               </div>
             </div>

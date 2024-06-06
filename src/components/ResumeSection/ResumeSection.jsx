@@ -29,34 +29,31 @@ function ResumeSection({ darkMode }) {
           </h2>
 
           <p className="intro">
-            Hello, and welcome to my profile! As a fresh and enthusiastic
-            frontend developer, I thrive in create interactive web experiences
-            using React, vanilla CSS, JavaScript, and HTML. My keen eye for
-            design and passion for UI/UX further empowers me to create visually
-            engaging and user-friendly interfaces. Eager to embark on a
-            fulfilling journey, I&apos;m actively seeking opportunities to
-            contribute my skills and grow within a collaborative team.
-            Let&apos;s build something amazing together.
+          Passionate Frontend Developer with a strong foundation in React, Next Js, Javascript, Python, HTML, CSS and dynamic animations using GSAP and Framer Motion. Currently
+expanding my expertise into Three.js, I thrive on creating engaging, responsive web experiences that
+push the boundaries of user interaction. Eager to bring my technical knowledge and creative flair to a
+team that values innovation and exceptional web design. 
           </p>
           <div>
             <h3 className="edu-title">
-              <span>E</span>ducational Qualification<span>:</span>
+              Educational Qualification<span>:</span>
             </h3>
             <EducationExp />
           </div>
           <div>
             <h3 className="edu-title">
-              <span>A</span>chievements and <span>C</span>ertifications
+              Work Experience<span>:</span>
+            </h3>
+            <WorkExp />
+          </div>
+          <div>
+            <h3 className="edu-title">
+             Achievements and Certifications
               <span>:</span>
             </h3>
             <Certification />
           </div>
-          <div>
-            <h3 className="edu-title">
-              <span>W</span>ork Experience<span>:</span>
-            </h3>
-            <WorkExp />
-          </div>
+          
         </main>
         <aside>
           <SkillSection darkMode={darkMode} />

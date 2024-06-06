@@ -16,7 +16,8 @@ export const cards = [
     projectName: "DevStackFlow",
     info: "Developed a Stack Overflow clone with Next.js for Q&A and discussions, featuring a job portal, using MongoDB, Clerk for authentication, Tailwind CSS for styling, and Zod for data validation.",
     technology: [typescript, nextjs, tailwind_svg, mongoDb, js, zod],
-    readLink:false
+    readLink:"https://github.com/Murphy120814/devStackFlowV2",
+    viewLink:"https://devstackflow.frontendmeta.dev",
   },
   
   {
@@ -46,6 +47,15 @@ export const cards = [
     readLink: "https://github.com/Murphy120814/HungryHub",
     viewLink: "https://hungryhub.frontendmeta.dev",
   },
+  {
+    cardNumber: "5",
+    ongoing:false,
+    projectName: "Matrix",
+    info: "Designed and implemented 'Matrix', a dynamic admin panel for efficient user management with CRUD operations and precise rights delegation. enableing real-time UI updates and snapshot syncing",
+    technology: [js,firebasepng, tailwind_svg, js, react_svg],
+    readLink: "https://github.com/Murphy120814/crud_firebase",
+    viewLink: "https://matrix.frontendmeta.dev",
+  }
  
 
  

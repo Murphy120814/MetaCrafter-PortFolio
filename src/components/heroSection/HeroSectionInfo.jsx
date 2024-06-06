@@ -8,7 +8,7 @@ function HeroSectionInfo() {
       <div className="heroSectionInfo__container-child">
         <h1>I am <span>P</span>rathmesh Vhatkar,</h1>
         <HeroSectionTypeAnimation />
-        <p>An aspiring frontend developer with a passion for React, CSS, and the creative world of web design. As a beginner, I&apos; m eager to dive into the world of coding and bring my imaginative ideas to life. I&apos; m currently on the lookout for exciting opportunities as a fresher to grow and learn from experienced teams. Let&apos;s collaborate and build something fantastic together!</p>
+        <p>As an experienced frontend developer, I bring a deep passion for React, Javascript and Next.js, along with a burgeoning expertise in Tailwind, GSAP and Three.js. My journey in web development has been fueled by a love for creativity and design, driving me to turn imaginative ideas into dynamic, user-friendly applications. I am continually honing my skills and eagerly seeking new challenges that allow me to grow and innovate. Let's collaborate to create exceptional digital experiences and push the boundaries of web design together!</p>
         <Link to="contact" smooth duration={1000} offset={-120}>
           <button type="button" className="call_to_action_btn vibrate-1">Contact me</button>
         </Link>

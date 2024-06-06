@@ -2,10 +2,10 @@
 import React from "react";
 import locationIcon from "../../assets/location.svg";
 import mailIcon from "../../assets/mail.svg";
-import linkedIn from "../../assets/linkedin.svg";
-import mediumIcon from "../../assets/medium-svgrepo-com.svg";
-import telegramLogo from "../../assets/telegram-svgrepo-com.svg";
-import gitHubLogo from "../../assets/github.png";
+import linkedIn from "../../assets/linkedInNewSvg.svg";
+import mediumIcon from "../../assets/mediumNewSvg.svg";
+
+import gitHubLogo from "../../assets/gitHubNewSvg.svg";
 
 function AsideContactInfo() {
   return (
@@ -21,19 +21,19 @@ function AsideContactInfo() {
               <img src={mailIcon} alt="mailVector" />
             </a>
           </span>
-          <p>prathm12.dev@gmail.com</p>
+          <p style={{fontWeight:"bold"}}>prathm12.dev@gmail.com</p>
         </div>
         <div>
           <span>
             <img src={locationIcon} alt="locationVector" />
           </span>
-          <p> Panvel, Mumbai, India</p>
+          <p style={{fontWeight:"bold"}}> Panvel, Mumbai, India</p>
         </div>
 
         <ul className="socialMedia">
           <li>
             <a
-              href="https://www.linkedin.com/in/prathmesh-v-561120295"
+              href="https://www.linkedin.com/in/prathmesh-ganesh-vhatkar-0024992b2/"
               target="_blank"
               rel="noreferrer">
               <img src={linkedIn} alt="LinkedInLogo" />
