@@ -1,225 +1,214 @@
-.projectSection__container-flex{
-    /* border: 2px solid rgb(136, 136, 131); */
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    min-height: 80vh;
-    min-width: 290px;
-    position: relative;
-    /* padding: 1rem; */
-    z-index: 100;
+.projectSection__container-flex {
+  /* border: 2px solid rgb(136, 136, 131); */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 80vh;
+  min-width: 290px;
+  position: relative;
+  /* padding: 1rem; */
+  z-index: 100;
 }
 
-.projectSection__container-flex .title{
-    font-size: 4rem;
-    text-align: center;
-    color: var(--headline-color);
-
-    /* border: 2px solid red; */
-}
-.projectSection__container-flex::before{
-    content: "";
-    /* background-color: var(--cta-button-color); */
-    background:var(--right-middleCircle-color); 
-    /* linear-gradient(var(--cta-button-color), var(--background-color)); */
-    clip-path: circle(30% at 76% 60%);
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 133px;
-    left: 125px;
-    z-index: -1;
-}
-.projectSection__container-flex::after{
- 
-    content: "";
-    /* background-color: var(--cta-button-color); */
-    background: var(--left-upperCircle-color);
-    /* linear-gradient(to left top, var(--background-color) 60%, var(--cta-button-color)); */
-    /* background: linear-gradient(to left ,var(--cta-button-color), black); */
-
-    clip-path: circle(18% at 15% 40%);
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: -195px;
-    left: -79px;
-    z-index: -1;
-    
+.ongoingLabel {
+  font-size: 2rem;
+  color: greenyellow !important;
+  text-align: center;
+  margin-top: -30px;
+  font-weight: bolder;
 }
 
+.projectSection__container-flex .title {
+  font-size: 4rem;
+  text-align: center;
+  color: var(--headline-color);
 
+  /* border: 2px solid red; */
+}
+.projectSection__container-flex::before {
+  content: "";
+  /* background-color: var(--cta-button-color); */
+  background: var(--right-middleCircle-color);
+  /* linear-gradient(var(--cta-button-color), var(--background-color)); */
+  clip-path: circle(30% at 76% 60%);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 133px;
+  left: 125px;
+  z-index: -1;
+}
+.projectSection__container-flex::after {
+  content: "";
+  /* background-color: var(--cta-button-color); */
+  background: var(--left-upperCircle-color);
+  /* linear-gradient(to left top, var(--background-color) 60%, var(--cta-button-color)); */
+  /* background: linear-gradient(to left ,var(--cta-button-color), black); */
+
+  clip-path: circle(18% at 15% 40%);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: -195px;
+  left: -79px;
+  z-index: -1;
+}
 
 /* *Designing card container now */
-.card__container-main_flex{
-    /* border: 2px solid yellow; */
-    display: flex;
-    flex-flow: row wrap;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    gap: 4%;
+.card__container-main_flex {
+  /* border: 2px solid yellow; */
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 4%;
 }
-
 
 /* *Now designing the card itself  */
-.card{
-    display: flex;
-    flex-direction: column;
-    /* flex-basis: calc(92%/3); */
-    width: 35rem;
-    margin: 2rem;
-    min-width: 25rem;
-    /* border: 2px solid green; */
-    min-height: 350px;
-    padding: 1rem;
-    border-radius: 2rem;
-    background:var(--card-color);
-    opacity: 0.7;
-    box-shadow: var(--card-shadow);
-    transition: 0.2s ease-in-out;
-    position: relative;
-    overflow: hidden;
+.card {
+  display: flex;
+  flex-direction: column;
+  /* flex-basis: calc(92%/3); */
+  width: 35rem;
+  margin: 2rem;
+  min-width: 25rem;
+  /* border: 2px solid green; */
+  min-height: 350px;
+  padding: 1rem;
+  border-radius: 2rem;
+  background: var(--card-color);
+  opacity: 0.7;
+  box-shadow: var(--card-shadow);
+  transition: 0.2s ease-in-out;
+  position: relative;
+  overflow: hidden;
 }
 
-.card:hover{
-    transform: scale(1.1);
-    
+.card:hover {
+  transform: scale(1.1);
 }
 
-.card:hover h2{
-    color: var(--cta-button-color);
+.card:hover h2 {
+  color: var(--cta-button-color);
 }
-
 
 /* *designing inside the content  */
 
-.card .content{
-    text-align: center;
+.card .content {
+  text-align: center;
 }
 
-.card  h2{
-    color: var(--card-number-color);
-    font-size: 20rem;
-    position: absolute;
-    top: -227px;
-    right: -15px;
+.card h2 {
+  color: var(--card-number-color);
+  font-size: 20rem;
+  position: absolute;
+  top: -227px;
+  right: -15px;
 }
 
-.card .content{
-    z-index: 100;
+.card .content {
+  z-index: 100;
 }
 
-.card .content .cardInfo h3{
-    font-size: 4rem;
-    color: var(--headline-color);
+.card .content .cardInfo h3 {
+  font-size: 4rem;
+  color: var(--headline-color);
 }
-.card .content .cardInfo p{
-    font-size: 1.5rem;
-    color: var(--text-color);
+.card .content .cardInfo p {
+  font-size: 1.5rem;
+  color: var(--text-color);
 }
-
-
 
 /* *designing techStack Icons */
 
-.techStack__technologies img{
-    /* border: 2px solid yellow; */
-    width: 4rem;
-    background-position: center;
-    height: 4rem;
-    border-radius: 50%;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    margin-right: 1rem;
+.techStack__technologies img {
+  /* border: 2px solid yellow; */
+  width: 4rem;
+  background-position: center;
+  height: 4rem;
+  border-radius: 50%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-right: 1rem;
 }
-.techStack__technologies{
-    margin-bottom: 2rem;
+.techStack__technologies {
+  margin-bottom: 2rem;
 }
-
-
 
 /* *additional css for ghost button and cta button */
-.stick_position_ghost_btn{
+.stick_position_ghost_btn {
+  position: absolute;
+  bottom: 1.2rem; /* Adjust this value to set the distance from the bottom */
+  left: 36%; /* Center the button horizontally if needed */
+  transform: translateX(-50%);
+}
+.stick_position_cta_btn {
+  position: absolute;
+  bottom: 1.2rem; /* Adjust this value to set the distance from the bottom */
+  left: 69%; /* Center the button horizontally if needed */
+  transform: translateX(-50%);
+}
+
+@media (max-width: 1000px) {
+  .card__container-main_flex {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 800px) {
+  .projectSection__container-flex::before {
+    display: none;
+  }
+  .projectSection__container-flex::after {
+    display: none;
+  }
+  .card {
+    box-shadow: 1rem 1rem 3rem var(--cta-button-color);
+    margin-bottom: 2rem;
+    /* width: 25rem; */
+    /* margin-right: 0; */
+  }
+}
+
+@media (max-width: 500px) {
+  .card {
+    box-shadow: 1rem 1rem 3rem var(--cta-button-color);
+    margin-bottom: 2rem;
+    width: 25rem;
+    /* margin-right: 0; */
+  }
+  .techStack__technologies img {
+    background-position: center;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    margin-top: 1rem;
+    /* margin-bottom: 1rem; */
+    margin-right: 1rem;
+  }
+
+  .techStack__technologies {
+    margin-bottom: 0;
+  }
+  .stick_position_ghost_btn {
     position: absolute;
-    bottom: 1.2rem; /* Adjust this value to set the distance from the bottom */
-    left: 36%; /* Center the button horizontally if needed */
-    transform: translateX(-50%); 
-}
-.stick_position_cta_btn{
+    bottom: 4.2rem;
+    left: 30%;
+    transform: translateX(-50%);
+  }
+  .stick_position_cta_btn {
     position: absolute;
-    bottom: 1.2rem; /* Adjust this value to set the distance from the bottom */
-    left: 69%; /* Center the button horizontally if needed */
-    transform: translateX(-50%); 
-}
-
-
-@media (max-width:1000px){
-    .card__container-main_flex{
-        gap: 10px;
-    }
-}
-
-@media (max-width:800px)  {
-    .projectSection__container-flex::before{
-        display: none;
-        
-    }
-    .projectSection__container-flex::after{
-        display: none;
-
-    }
-    .card{
-        box-shadow: 1rem 1rem 3rem var(--cta-button-color);
-        margin-bottom: 2rem;
-        /* width: 25rem; */
-        /* margin-right: 0; */
-
-    }
-
-    
-}
-
-@media (max-width:500px) {
-    .card{
-        box-shadow: 1rem 1rem 3rem var(--cta-button-color);
-        margin-bottom: 2rem;
-        width: 25rem;
-        /* margin-right: 0; */
-
-    }
-    .techStack__technologies img {
-        background-position: center;
-        border-radius: 50%;
-        width: 3rem;
-        height: 3rem;
-        margin-top: 1rem;
-        /* margin-bottom: 1rem; */
-        margin-right: 1rem;
-    }
-
-    .techStack__technologies {
-        margin-bottom: 0;
-    }
-    .stick_position_ghost_btn {
-        position: absolute;
-        bottom: 4.2rem;
-        left: 30%;
-        transform: translateX(-50%);
-    }
-    .stick_position_cta_btn {
-        position: absolute;
-        bottom: 4.2rem;
-        left: 78%;
-        transform: translateX(-50%);
-    }
-    .card .content .cardInfo h3 {
-        color: var(--headline-color);
-        font-size: 3rem;
-    }
-    .card .content .cardInfo p {
-        color: var(--text-color);
-        font-size: 1.2rem;
-    }
-    
+    bottom: 4.2rem;
+    left: 78%;
+    transform: translateX(-50%);
+  }
+  .card .content .cardInfo h3 {
+    color: var(--headline-color);
+    font-size: 3rem;
+  }
+  .card .content .cardInfo p {
+    color: var(--text-color);
+    font-size: 1.2rem;
+  }
 }

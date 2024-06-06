@@ -5,12 +5,23 @@ import react_svg from "../assets/react.svg";
 import tailwind_svg from "../assets/tailwind.svg";
 import firebasepng from "../assets/firebase_28dp.png";
 import materialUI from "../assets/material-ui-file.svg";
-
+import typescript from "../assets/typescript.svg"
+import nextjs from "../assets/nextjs.svg"
+import mongoDb from "../assets/mongodb.svg"
+import zod from "../assets/zod.svg"
 export const cards = [
-  
-  
   {
     cardNumber: "1",
+    ongoing:true,
+    projectName: "DevStackFlow",
+    info: "Developed a Stack Overflow clone with Next.js for Q&A and discussions, featuring a job portal, using MongoDB, Clerk for authentication, Tailwind CSS for styling, and Zod for data validation.",
+    technology: [typescript, nextjs, tailwind_svg, mongoDb, js, zod],
+    readLink:false
+  },
+  
+  {
+    cardNumber: "2",
+    ongoing:false,
     projectName: "CineFlix",
     info: " Designed and built Cineflix with Material-UI and React, implementing secure authentication through TheMovieDB API, showcasing dynamic application development skills.",
     technology: [html, materialUI, js, react_svg],
@@ -18,7 +29,8 @@ export const cards = [
     viewLink: "https://cineflix.frontendmeta.dev",
   },
   {
-    cardNumber: "2",
+    cardNumber: "3",
+    ongoing:false,
     projectName: "Fit Forms",
     info: "Developed and Launched FitForms for fitness tracking with JavaScript, React, HTML, Tailwind CSS, and Firebase Auth for secure, interactive, and functional user experiences.",
     technology: [tailwind_svg, firebasepng, js, react_svg],
@@ -26,21 +38,18 @@ export const cards = [
     viewLink: "https://fitforms.frontendmeta.dev",
   },
   {
-    cardNumber: "3",
+    cardNumber: "4",
+    ongoing:false,
     projectName: "Hungry Hub",
     info: "Created a Swiggy clone using Swiggy's public API to simulate the Swiggy app. Implemented the frontend using React and Tailwind CSS, demonstrating proficiency in frontend development and API",
     technology: [html, tailwind_svg, js, react_svg],
     readLink: "https://github.com/Murphy120814/HungryHub",
     viewLink: "https://hungryhub.frontendmeta.dev",
   },
-  {
-    cardNumber: "4",
-    projectName: "MyToDoApp",
-    info: " Designed and built MyToDoApp using React, Javascript, Tailwind and HTML which contains adding to do list,deleting particular item and striking through if done and undo if wanted.",
-    technology: [html, tailwind_svg, js, react_svg],
-    readLink: "https://github.com/Murphy120814/My-To-Do-App",
-    viewLink: "https://mytodo.frontendmeta.dev",
-  },
+ 
+
+ 
+ 
 ];
 
 export const educationCards = [
@@ -107,7 +116,7 @@ export const certification = [
     id: "15",
     year: "2021-22",
     roleName: "Autonomous Badminton Bot Research Paper",
-    companyName: "completed",
+    companyName: "Research",
     someInfo:
       "Co-authored a research paper published in IEEE in 2022.",
   },
@@ -116,39 +125,33 @@ export const certification = [
 export const workExp = [
   {
     id: "21",
-    year: "2023",
+    year: "Dec-2023 to Present",
     roleName: "Frontend Developer",
-    companyName: "fresher",
+    companyName: "Current",
     someInfo:
-      "Seeking a frontend developer position as a fresher, ready to contribute skills and learn in a professional environment",
+      "Currently employed as a Software Developer at Fermion InfoTech in Mumbai, focusing on frontend development mainly in React and Next js",
   },
   {
     id: "22",
-    year: "2021-23",
-    roleName: "UPSC aspirant",
-    companyName: "student",
+    year: "June 2023 - Dec 2023",
+    roleName: "Freelancing",
+    companyName: "  ",
     someInfo:
-      "Took a two-year hiatus for UPSC Civil Services, fostering resilience, perseverance, and continual learning experiences.",
-  },
-  {
-    id: "23",
-    year: "2021-22",
-    roleName: "Gym Instructor",
-    companyName: "",
-    someInfo:
-      "Worked as a part-time during the preparation of the UPSC as a Gym Helper/ Instructor. ",
+      "Engaged in freelance projects to refine my frontend development skills while learning. These hands-on experiences helped me deepen my technical knowledge and enhance my practical abilities",
   },
   {
     id: "24",
-    year: "2019-2020",
+    year: "June 2019 - Aug 2021",
     roleName: "Robocon India",
-    companyName: "student Researcher",
+    companyName: "Student Researcher",
     someInfo:
     "Worked on quadruped robot inverse kinematics, using Arduino, Raspberry Pi, OpenCV, SLAM, and gaining ROS experience with Python"
   },
+
+
   {
     id: "25",
-    year: "2018-2021",
+    year: "June 2018 - Oct2020",
     roleName: "Physics Tutor",
     companyName: "SR Academy",
     someInfo:
