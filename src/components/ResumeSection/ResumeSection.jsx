@@ -16,8 +16,9 @@ function ResumeSection({ darkMode }) {
             Skills and Resume{" "}
             <span title="Download My Resume" className="resumeDownload">
               <a
-                href="https://drive.google.com/file/d/13NiPamcD_2kmAb2C6i-8sZPhgYTUyixB/view?usp=sharing"
+                href="https://drive.google.com/file/d/1-Thu3949ONIchvMpMH5kQAMM6CYK1_LN/view?usp=sharing"
                 target="_blank"
+              
                 rel="noreferrer">
                 {darkMode ? (
                   <img src={pdfDownload} alt="DownloadMYResume" />
