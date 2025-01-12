@@ -94,7 +94,7 @@ export const certification = [
     id: "11",
     year: "2023",
     roleName: "Frontend Meta Certification",
-    companyName: "ongoing",
+    companyName: "completed",
     someInfo:
       "Pursuing Frontend Meta certification, acquiring comprehensive skills for frontend development through ongoing learning and hands-on experience",
   },
@@ -102,7 +102,7 @@ export const certification = [
     id: "12",
     year: "2023",
     roleName: "AlgoExpert Frontend Certification",
-    companyName: "ongoing",
+    companyName: "completed",
     someInfo:
       "Pursuing AlgoExpert certification, preparing for industry-level frontend development through ongoing learning and skill-building to excel in the field.",
   },
@@ -135,14 +135,22 @@ export const certification = [
 export const workExp = [
   {
     id: "21",
-    year: "Dec-2023 to Present",
+    year: "Sep-2024",
     roleName: "Frontend Developer",
-    companyName: "Current",
+    companyName: "",
+    someInfo:
+      "Building User Interfaces and Scalable forntend at Juspay",
+  },
+  {
+    id: "22",
+    year: "Dec-2023 to Sep-2024",
+    roleName: "Frontend Developer",
+    companyName: "",
     someInfo:
       "Currently employed as a Software Developer at Fermion InfoTech in Mumbai, focusing on frontend development mainly in React and Next js",
   },
   {
-    id: "22",
+    id: "23",
     year: "June 2023 - Dec 2023",
     roleName: "Freelancing",
     companyName: "  ",
@@ -159,14 +167,7 @@ export const workExp = [
   },
 
 
-  {
-    id: "25",
-    year: "June 2018 - Oct2020",
-    roleName: "Physics Tutor",
-    companyName: "SR Academy",
-    someInfo:
-      "Taught Physics subject to the 11th and 12th grade students in the Shailendra Rajput Academy. Provided personalised instructions, practise material to assist student to understanding complex problems ",
-  },
+  
 ];
 
 export const imageBase64 =

@@ -1,6 +1,13 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
-import { Navbar, HeroSection, ProjectSection, ResumeSection, ContactSection, FooterSection } from './index';
+import {
+  Navbar,
+  HeroSection,
+  ProjectSection,
+  ResumeSection,
+  ContactSection,
+  FooterSection,
+} from "./index";
 
 function App() {
   const [darkMode, setDarkMode] = useState(true); // Default to dark mode
@@ -8,7 +15,9 @@ function App() {
 
   const showAlertIfNeeded = () => {
     if (window.innerWidth < 1000 && !alertShown) {
-      window.alert('May I Suggest? For a fuller experience, kindly explore my website on a larger screens such as Laptop. ');
+      window.alert(
+        "May I Suggest? For a fuller experience, kindly explore my website on a larger screens such as Laptop. "
+      );
       setAlertShown(true);
     }
   };
@@ -18,16 +27,16 @@ function App() {
     showAlertIfNeeded();
 
     // Set up an event listener to check the screen width whenever the window is resized
-    window.addEventListener('resize', showAlertIfNeeded);
+    window.addEventListener("resize", showAlertIfNeeded);
 
     // Clean up the event listener when the component unmounts
     return () => {
-      window.removeEventListener('resize', showAlertIfNeeded);
+      window.removeEventListener("resize", showAlertIfNeeded);
     };
   }, [alertShown]);
   useEffect(() => {
-    const savedTheme = localStorage.getItem('theme');
-    if (savedTheme === 'light') {
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme === "light") {
       setDarkMode(false);
     }
   }, []);
@@ -35,11 +44,11 @@ function App() {
   const toggleTheme = () => {
     const newMode = !darkMode;
     setDarkMode(newMode);
-    localStorage.setItem('theme', newMode ? 'dark' : 'light');
+    localStorage.setItem("theme", newMode ? "dark" : "light");
   };
 
   useEffect(() => {
-    document.documentElement.classList.toggle('lightMode', !darkMode);
+    document.documentElement.classList.toggle("lightMode", !darkMode);
   }, [darkMode]);
   return (
     <div className="container">
@@ -47,7 +56,6 @@ function App() {
       <HeroSection />
       <ProjectSection />
       <ResumeSection darkMode={darkMode} />
-      <ContactSection />
       <FooterSection />
     </div>
   );

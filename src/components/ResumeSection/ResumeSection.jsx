@@ -12,28 +12,16 @@ function ResumeSection({ darkMode }) {
     <div className="resumeSection__main-container" id="resume">
       <div className="resumeSection__grid-container">
         <main>
-          <h2 className="eyebrows">
-            Skills and Resume{" "}
-            <span title="Download My Resume" className="resumeDownload">
-              <a
-                href="https://drive.google.com/file/d/1-Thu3949ONIchvMpMH5kQAMM6CYK1_LN/view?usp=sharing"
-                target="_blank"
-              
-                rel="noreferrer">
-                {darkMode ? (
-                  <img src={pdfDownload} alt="DownloadMYResume" />
-                ) : (
-                  <img src={pdfDownloadLight} alt="DownloadMYResume" />
-                )}
-              </a>
-            </span>
-          </h2>
+          <h2 className="eyebrows">Skills and Resume </h2>
 
           <p className="intro">
-          Passionate Frontend Developer with a strong foundation in React, Next Js, Javascript, Python, HTML, CSS and dynamic animations using GSAP and Framer Motion. Currently
-expanding my expertise into Three.js, I thrive on creating engaging, responsive web experiences that
-push the boundaries of user interaction. Eager to bring my technical knowledge and creative flair to a
-team that values innovation and exceptional web design. 
+            Passionate Frontend Developer with a strong foundation in React,
+            Next Js, Javascript, Python, HTML, CSS and dynamic animations using
+            GSAP and Framer Motion. Currently expanding my expertise into
+            Three.js, I thrive on creating engaging, responsive web experiences
+            that push the boundaries of user interaction. Eager to bring my
+            technical knowledge and creative flair to a team that values
+            innovation and exceptional web design.
           </p>
           <div>
             <h3 className="edu-title">
@@ -49,12 +37,11 @@ team that values innovation and exceptional web design.
           </div>
           <div>
             <h3 className="edu-title">
-             Achievements and Certifications
+              Achievements and Certifications
               <span>:</span>
             </h3>
             <Certification />
           </div>
-          
         </main>
         <aside>
           <SkillSection darkMode={darkMode} />
